@@ -155,6 +155,8 @@ body {
 .sign-in-area {
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-animation: moveUp .8s ease 1;
+          animation: moveUp .8s ease 1;
 }
 
 .sign-up-area input,
@@ -253,5 +255,27 @@ body {
           transform: translateY(5px);
   -webkit-box-shadow: 0 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
