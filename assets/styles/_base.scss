@@ -1,0 +1,30 @@
+$color-primary: #FF8BB0;
+$color-primary-dark: #ff4e86;
+$color-white: #fafafa;
+$color-black: #000;
+$color-grey: #616161;
+$color-grey-light: #d3d3d3;
+
+$tab-land: 1200px;
+$tab-port: 925px;
+$tab-phone: 600px;
+$small-phone: 450px;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    @media only screen and (max-width: $tab-phone) {
+        font-size: 56.25%;
+    }
+}
+
+body{
+    box-sizing: border-box;
+}

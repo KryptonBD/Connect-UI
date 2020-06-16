@@ -1,0 +1,93 @@
+.buttons {
+    display: flex;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    & > * {
+        margin: 2rem;
+        padding: 1.5rem;
+        cursor: pointer;
+        // border-bottom: 2px solid currentColor;
+        @media only screen and (max-width: $small-phone) {
+            margin: 1.5rem 0;
+        }
+    }
+    .btns[aria-selected="false"] {
+        color: $color-grey;
+    }
+    .btns[aria-selected="true"] {
+        color: transparent;
+        background: linear-gradient(
+            -120deg,
+            $color-primary,
+            $color-primary-dark
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        border-bottom: 2px solid $color-primary;
+    }
+}
+
+.sign-up-area,
+.sign-in-area {
+    input {
+        display: block;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        padding: 1.2rem;
+        font-size: 2rem;
+        outline: none;
+        border: 0.2rem solid rgba($color-primary, 0.7);
+        // border: none;
+        box-shadow: 0.2rem 0.8rem 1rem rgba($color-black, 0.15);
+        border-radius: 1rem;
+        transition: all 0.2s;
+        @media only screen and (max-width: $small-phone) {
+            margin: 1.5rem 0;
+            
+        }
+    }
+    input:focus {
+        transform: translateY(-5px);
+        border-color: $color-primary-dark;
+    }
+
+    .bottom-line {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a,
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: $color-primary-dark;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+        button {
+            outline: none;
+            background: $color-primary;
+            color: $color-white;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 0.8rem 0.5rem rgba($color-black, 0.1);
+            transition: all 0.2s;
+            &:hover {
+                background: $color-primary-dark;
+            }
+            &:active {
+                transform: translateY(5px);
+                box-shadow: 0 0.5rem 0.3rem rgba($color-black, 0.1);
+            }
+        }
+    }
+}

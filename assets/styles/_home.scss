@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    margin: 4rem 2rem;
+    background: $color-white;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+
+    @media only screen and (max-width: $tab-port) {
+        margin: 2rem;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: $small-phone) {
+        margin: 0;
+        height: 100vh;
+    }
+}
+
+.forms {
+    padding: 0 5rem;
+    @media only screen and (max-width: $tab-port) {
+        margin-bottom: 2rem;
+        flex: 0 0 60%;
+    }
+}
+
+.images {
+    position: relative;
+    background: rgba($color-grey, 0.2);
+    padding: 0 5rem;
+    @media only screen and (max-width: $tab-port) {
+        padding: 0 2rem;
+        align-self: stretch;
+        text-align: center;
+    }
+    @media only screen and (max-width: $tab-port) {
+        padding: 0 1rem;
+    }
+    @media only screen and (max-width: $small-phone) {
+        display: none;
+    }
+
+    svg {
+        position: relative;
+        width: 50rem;
+        z-index: 2;
+
+        @media only screen and (max-width: $tab-land) {
+            width: 35rem;
+        }
+        @media only screen and (max-width: $tab-port) {
+            width: 100%;
+        }
+        @media only screen and (max-width: $small-phone) {
+            width: 70%;
+        }
+    }
+}
