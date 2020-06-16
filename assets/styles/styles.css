@@ -101,7 +101,7 @@ body {
 
 .images svg {
   position: relative;
-  width: 50rem;
+  width: 60rem;
   z-index: 2;
 }
 
@@ -117,12 +117,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 450px) {
-  .images svg {
-    width: 70%;
-  }
-}
-
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,6 +129,8 @@ body {
   margin: 2rem;
   padding: 1.5rem;
   cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 @media only screen and (max-width: 450px) {
@@ -155,6 +151,12 @@ body {
   border-bottom: 2px solid #FF8BB0;
 }
 
+.sign-up-area,
+.sign-in-area {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .sign-up-area input,
 .sign-in-area input {
   display: block;
@@ -163,6 +165,7 @@ body {
   padding: 1.2rem;
   font-size: 2rem;
   outline: none;
+  width: 100%;
   border: 0.2rem solid rgba(255, 139, 176, 0.7);
   -webkit-box-shadow: 0.2rem 0.8rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0.2rem 0.8rem 1rem rgba(0, 0, 0, 0.15);
@@ -194,9 +197,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .sign-up-area .bottom-line a,
