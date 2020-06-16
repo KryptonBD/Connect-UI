@@ -20,6 +20,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Livvic', sans-serif;
 }
 
 .container {
@@ -166,6 +167,7 @@ body {
   margin-bottom: 4rem;
   padding: 1.2rem;
   font-size: 2rem;
+  font-family: inherit;
   outline: none;
   width: 100%;
   border: 0.2rem solid rgba(255, 139, 176, 0.7);
@@ -259,8 +261,8 @@ body {
 
 @-webkit-keyframes moveUp {
   0% {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -270,8 +272,8 @@ body {
 
 @keyframes moveUp {
   0% {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   100% {
     -webkit-transform: translateX(0);
